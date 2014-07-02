@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 600px;
+  overflow: scroll;
+}
+
+h1 {
+  font-family: 'Limelight';
+}
+
+.color-list {
+  margin: 20px 15px;
+  float: left;
+}
+
+.color-list li {
+  width: 80px;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
+  color: #ccc;
+}
+
+.color-list li span {
+  display: block;
+  margin-top: 45%;
+}
+
+a {
+  text-decoration: none;
+  color: #1A82BD;
+}
+
+.fill-color {
+  width: 20%;
+  height: 600px;
+  float: left;
+}
+
+.center {
+  position: absolute;
+  z-index: 1;
+  margin: 4% 35%;
+  width: 30%;
+  text-align: center;
+}
+
+nav {
+  position: absolute;
+  z-index: 1;
+  margin: 4% 5%;
+  width: 30%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
