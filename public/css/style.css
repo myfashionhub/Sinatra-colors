@@ -2,13 +2,19 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  min-height: 600px;
-  overflow: scroll;
+  height: 100%;
+  overflow: auto;
+  font-size: 16px;
 }
 
-h1 {
-  font-family: 'Limelight';
+html {
+  height: 100%;
 }
+
+* {
+  font-family: Helvetica;
+}
+
 
 .color-list {
   margin: 20px 15px;
@@ -28,33 +34,71 @@ h1 {
   margin-top: 45%;
 }
 
-a {
-  text-decoration: none;
-  color: #1A82BD;
-}
-
-.fill-color {
-  width: 20%;
-  height: 600px;
-  float: left;
-}
-
-.center {
+/* Top layer */
+.top {
   position: absolute;
   z-index: 1;
-  margin: 4% 35%;
-  width: 30%;
-  text-align: center;
+  width: 100%;
 }
 
+/* LINKS and BUTTONS */
 nav {
-  position: absolute;
-  z-index: 1;
-  margin: 4% 5%;
-  width: 30%;
+  overflow: auto;
+  float: right;
+}
+a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #444;
+}
+
+a:hover {
+  background-color: #19A698;
+}
+
+.next {
+  display: block;
+  margin: 200px auto 0 auto;
+  color: #fff;
+  background-color: #19A698;
+  font-weight: bold;
+  padding: 7px;
+  border: 0;
+  outline: none;
+}
+
+.next:hover {
+  cursor: pointer;
+  background-color: #FF8B42;
+}
+
+/* Fill layer */
+
+h1 {
+  font-family: 'Limelight';
+  font-size: 4em;
+  position: relative;
+  display: block;
+  margin: 30px auto 0 20px;
 }
 
 .fill {
-  width: 100%;
   height: 100%;
+  width: 100%;
+}
+.fill-color {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.fill-color span {
+  font-family: Helvetica;
+  display: block;
+  width: 75px;
+  margin: 370px auto 0 auto;
 }
