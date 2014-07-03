@@ -1,7 +1,8 @@
 require 'bundler'
 Bundler.require
 
-db = URI.parse('postgres://postgres:postgres@localhost/sinatra_colors_development')
+db_url = ENV['DATABASE_URL'] || 'postgres://postgres:postgres@localhost/sinatra_colors_development'
+db = URI.parse()
 
 ActiveRecord::Base.establish_connection(
   :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
