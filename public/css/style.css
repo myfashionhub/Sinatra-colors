@@ -5,6 +5,7 @@ body {
   height: 100%;
   overflow: auto;
   font-size: 16px;
+  background-color: #f5f5f5;
 }
 
 html {
@@ -101,4 +102,29 @@ h1 {
   display: block;
   width: 75px;
   margin: 370px auto 0 auto;
+}
+
+/* Saved palettes */
+.wrapper {
+  margin: 5%;
+}
+
+.wrapper h2,
+.palette h4 {
+  font-family: 'Limelight';
+}
+
+.palette {
+  width: 100%;
+  overflow: auto;
+}
+
+.palette h4 {
+  margin: 1.5em 0 .5em 0;
+}
+.color {
+  width: 18%;
+  float: left;
+  padding: 10px 1%;
+  text-align: center;
 }

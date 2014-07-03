@@ -14,8 +14,21 @@
 </head>
 
 <body>
+  <nav>
+    <a href='/palettes' class="view">Discover Palettes</a>
+  </nav>
 
-  <div class="color-list">
+  <div class="wrapper">
+    <h2>All the Palettes</h2>
+
+    <% @palettes.each do |palette| %>
+      <div class="palette">
+      <h4><%= palette.title %></h4>
+      <% palette.colors.each do |color| %>
+        <div class="color" style='background-color:<%= color %>'><%= color %></div>
+      <% end %>
+      </div>
+    <% end %>
   </div>
 
 </body>
