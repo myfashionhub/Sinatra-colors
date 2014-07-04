@@ -5,6 +5,7 @@ require './config.rb'
 
 class Palette < ActiveRecord::Base
   serialize :colors, Array
+  validates :title, uniqueness: true
 end
 
 get '/' do
